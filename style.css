@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: large;  
+     background-color: azure;
+
+}
+.main{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    
+}
+.face{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 40vh;
+    width: 70vw;
+    margin: 50px;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+.container{
+    display: flex;
+    justify-self:space-between;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 700px;
+    margin: 50px;
+    padding: 20px;
+    border: 2px solid rgb(223, 209, 209);
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(151, 221, 111);
+    cursor: pointer;
+    color: white;
+    box-shadow: 1px 6px 5px rgba(44, 46, 33, 0.2);
+
+}
+div .left{
+    display: flex;
+    justify-self: space-between;
+    align-items:center;
+    gap: 10px;
+
+    
+}
+.btn
+{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(151, 221, 111);
+
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+
+}
+.del_button{
+    display: flex;
+    padding-left: 70%;
+    color: black;
+}
+.popUp h2{
+    text-align: center;
+
+}
+.popUp{
+    padding: 10px;
+    height: 65vh;
+    width: 55vw;
+    background-color: rgb(214, 209, 209);
+    visibility: hidden;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    box-shadow: 0 6px 5px rgba(0,0,0,0.2);
+
+}
+.delete_button{
+    padding-left: 690px;
+    cursor: pointer;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+form{
+   height: 60vh;
+   width: 50vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   
+
+    
+}
+
+
+input,textarea
+{
+    height: 37px;
+    width:320px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.btn2{
+    display: flex;
+    align-self: flex-end;
+    padding-left: 50px;
+    padding-top:10px ;
+    height: 40px;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+}

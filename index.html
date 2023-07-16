@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link href="style.css" rel="stylesheet">
+   <script src="script.js" defer></script>
+   </head>
+<body>
+   <div class="main">
+      <div class="face">
+            <h1>What are you going to plan?</h1>
+            <div class="left">
+               <button class="btn" type="button" onclick="openPopUp()">+</button>
+               <span>add new</span>
+               
+         </div>
+  
+     
+     
+    
+   
+   </div>
+     <div class="popUp" id="popup">
+      <div class="delete_button" onclick="closesPopUp()"> X </div>
+        <h2>Add a new todo</h2>
+           
+
+     
+        <form class="form">
+           <label for="title">Enter your todo title <br> <input type="text"  name="title" id="title"></label>
+           
+         
+           <label for="description">Enter your todo title        <br> <textarea  name="description" id="description"></textarea>
+           </label>
+           <label for="title">Enter your todo DeadLine  <br><input type="date" name="date" id="date">
+           </label>
+           <button class="btn2"  type="submit" >Add and Save</button>
+        
+        
+        </form>
+     </div>
+     <br>
+ 
+
+
+     <script>
+      let popup=document.getElementById("popup");
+      function openPopUp(){
+          popup.classList.add("open-popup")
+  
+      }
+      function closesPopUp(){
+          popup.classList.remove("open-popup")
+  
+      }
+  </script>
+  
+</body>
+</html>
